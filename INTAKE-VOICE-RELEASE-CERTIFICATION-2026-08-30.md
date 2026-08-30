@@ -14,10 +14,10 @@ Realtime voice media remains owned by the communication/voice SDK through the in
 | --- | --- | --- | --- | --- |
 | SDK-repository | PR #34 `feature/intake-survey-v1` | `df8c459b3f5ab9cdd8c13a55c6b71e44215075e0` | Compatibility + Workspace CI green | CERTIFIED |
 | SDK-repository | PR #35 `feature/intake-ui-v1` | `12b8352fe23b80b21e23aba0a9213d81f1be6e23` | Compatibility + Workspace CI green | CERTIFIED |
-| SDK-repository | PR #36 `feature/intake-voice-controls-v1` | `629cb790cbf7f33a652db9d7f1f33945250bd7da` | Code complete; exact-head Actions run not scheduled by GitHub for connector-authored head | CONDITIONALLY CERTIFIED / CI EVIDENCE BLOCKED |
+| SDK-repository | PR #36 `feature/intake-voice-controls-v1` | `992af9934ae76b50ef77a2479866aabcdf71680b` | Compatibility, Contract validation, Workspace CI, Middleware service, and Generated SDKs all green on exact head | CERTIFIED |
 | Caddy | PR #8 `feature/intake-edge-route-v1` | `8a5b58c112600d3bb957b3cfad9a9285554f86f4` | Validate Caddy source authority green | CERTIFIED |
 | Kong | PR #19 `feature/intake-gateway-route-v1` | `9b351e336a5e5841727e584c1557db41f15e1617` | Prior route/security suite passed; newest head has no attached Actions run | CONDITIONALLY CERTIFIED / CI EVIDENCE BLOCKED |
-| Middleware | PR #54 `feature/unified-lead-intake-v1` | `cc6ae33b198c27ed192a84456a1784b5627e75bb` | Prior exact-head intake/connector validation green before documentation-only PR updates; newest head has no attached Actions run | CONDITIONALLY CERTIFIED / CI EVIDENCE BLOCKED |
+| Middleware | PR #54 `feature/unified-lead-intake-v1` | `cc6ae33b198c27ed192a84456a1784b5627e75bb` | Prior exact-head intake/connector validation green before later synchronization; newest head has no attached Actions run | CONDITIONALLY CERTIFIED / CI EVIDENCE BLOCKED |
 | Keycloak | PR #32 `feature/sdk-intake-client-v2` | `dafda3d4be26ffdcd0964781964c5a81a1768bcf` | Previous head exposed MoneyBee creatable-client inventory mismatch; validator corrected to explicitly review `sdk-intake`; newest head requires fresh CI evidence | CONDITIONALLY CERTIFIED / CI REQUIRED |
 | Odoo | PR #48 `feature/intake-lead-upsert-v1` | `40f462cfd2a3584963508ebdd177ee71782f0fab` | Odoo Addons CI + Security gates green | CERTIFIED |
 
@@ -36,7 +36,7 @@ Realtime voice media remains owned by the communication/voice SDK through the in
 
 ## Required release gates before merge/deployment
 
-- A fresh exact-head Workspace CI + Compatibility run must exist for SDK PR #36.
+- SDK PR #36 exact-head certification is complete and must remain green on `992af9934ae76b50ef77a2479866aabcdf71680b` or be recertified after any head change.
 - A fresh exact-head gateway validation must exist for Kong PR #19.
 - A fresh exact-head Middleware validation must exist for PR #54.
 - A fresh exact-head Keycloak GitOps validation must exist for PR #32 and must pass after the reviewed-inventory correction.
@@ -48,7 +48,7 @@ Realtime voice media remains owned by the communication/voice SDK through the in
 
 `GO_FOR_MERGE = NO`
 
-`GO_FOR_STAGING_CERTIFICATION = YES, after remaining exact-head CI evidence is green`
+`GO_FOR_STAGING_CERTIFICATION = YES, after Kong + Middleware + Keycloak exact-head evidence is green`
 
 `GO_FOR_PRODUCTION = NO`
 
