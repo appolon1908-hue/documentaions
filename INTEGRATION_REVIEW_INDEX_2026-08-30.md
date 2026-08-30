@@ -34,16 +34,31 @@ GET  /codestra/middleware/v1/commands/{command_id}/status
 The n8n `/v1/integrations/n8n/*` routes and the Odoo direct CRM CRUD routes are
 deprecated compatibility aliases. They are not canonical for new work.
 
-## Reviewed source baselines
+## Exact source and review links
 
-| Repository | Baseline used for replacement branch | Replacement branch |
-|---|---:|---|
-| `appolon1908-hue/Odoo` | `16356fa57fbda080fe78831507eccd63d9a00fc4` | `fix/canonical-integration-contract-v2-20260830` |
-| `appolon1908-hue/Middleware-` | `0227e9d0380bf4808540d61c6f168fee584d138c` | `fix/odoo-canonical-command-v2-20260830` |
-| `appolon1908-hue/N8N` | `20d86c9de07db361fc183e32ba6c0c2069b1e5f6` | `fix/canonical-automation-contract-v2-20260830` |
-| `appolon1908-hue/Infustruction-repo` | `273395b07e2eba1111c9e2f6a80bf8384d104cfb` | `decision/middleware-automation-v2-odoo-command-20260830` |
-| `appolon1908-hue/communication-platform-` | `6d9c1be678d2c1e78f99d94b14bbf47d5b9a417a` | `docs/canonical-cross-system-control-plane-20260830` |
-| `appolon1908-hue/documentaions` | `95c203f9bd0aa76bcf13e922c277e5beac27f92e` | `docs/canonical-integration-review-index-20260830` |
+| Order | Repository | Protected-base SHA | Exact review head | Pull request |
+|---:|---|---|---|---|
+| 1 | `appolon1908-hue/Odoo` | `16356fa57fbda080fe78831507eccd63d9a00fc4` | `90ee7adf616f3cbc399d1b46f594c540851a2d3b` | [Odoo #53 — canonical Middleware/Odoo command](https://github.com/appolon1908-hue/Odoo/pull/53) |
+| 2 | `appolon1908-hue/Middleware-` | `0227e9d0380bf4808540d61c6f168fee584d138c` | `9f43ac7ac76bb51cfc93aa6fb3a8a547c5bf8dc2` | [Middleware #71 — canonical Odoo adapter](https://github.com/appolon1908-hue/Middleware-/pull/71) |
+| 3 | `appolon1908-hue/N8N` | `e4c89a9de22f326a566f55b7713af543c137ef9c` | `b4d43c6c53bd51dfc7d5fcd858126028a188fbf7` | [N8N #34 — automation v2 and Odoo upsert](https://github.com/appolon1908-hue/N8N/pull/34) |
+| 4 | `appolon1908-hue/Infustruction-repo` | `273395b07e2eba1111c9e2f6a80bf8384d104cfb` | `e3babf95887c4a57a9a613afcdc68c21986cf5d4` | [Infustruction #17 — accepted architecture decision](https://github.com/appolon1908-hue/Infustruction-repo/pull/17) |
+| 5 | `appolon1908-hue/communication-platform-` | `6d9c1be678d2c1e78f99d94b14bbf47d5b9a417a` | `8fe9b4ed4e883af6348eae51f6a3cba54a55462d` | [Communication platform #5 — cross-system control plane](https://github.com/appolon1908-hue/communication-platform-/pull/5) |
+| 6 | `appolon1908-hue/documentaions` | `95c203f9bd0aa76bcf13e922c277e5beac27f92e` | branch updates with this index | [Documentation #5 — review index and supersession map](https://github.com/appolon1908-hue/documentaions/pull/5) |
+
+Code and security reviews were explicitly requested on Odoo #53, Middleware
+#71 and N8N #34. Review completion and CI success are required; PR creation is
+not evidence that the checks passed.
+
+## Replacement branches
+
+| Repository | Replacement branch |
+|---|---|
+| `appolon1908-hue/Odoo` | `fix/canonical-integration-contract-v2-20260830` |
+| `appolon1908-hue/Middleware-` | `fix/odoo-canonical-command-v2-20260830` |
+| `appolon1908-hue/N8N` | `fix/canonical-automation-contract-v2-20260830` |
+| `appolon1908-hue/Infustruction-repo` | `decision/middleware-automation-v2-odoo-command-20260830` |
+| `appolon1908-hue/communication-platform-` | `docs/canonical-cross-system-control-plane-20260830` |
+| `appolon1908-hue/documentaions` | `docs/canonical-integration-review-index-20260830` |
 
 ## Required review order
 
@@ -171,6 +186,3 @@ This index authorizes review only. It does not authorize:
 - installing or upgrading Odoo modules;
 - enabling email, SMS, social, crawler, callback, VICIdial or PSTN effects;
 - deleting historical branches without a disposition record.
-
-The final review links and check status will be appended after the six pull
-requests are opened.
