@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "2.0.0",
+  "repository": "appolon1908-hue/documentaions",
+  "classification": "documentation",
+  "targetBranch": "codex/codestra-orbit-v2-documentaions",
+  "adoptionMode": "contract-only",
+  "domain": null,
+  "domainStatus": "not-applicable",
+  "requirements": {
+    "authorityReference": true,
+    "repositoryAdoptionLedger": true,
+    "domainLedger": true,
+    "pageAndSuiteRules": true,
+    "authAndColorRules": true,
+    "evidenceLedger": true,
+    "renameMigrationLedger": true,
+    "rollbackLedger": true,
+    "noCompetingUiSource": true
+  },
+  "status": "branch-created",
+  "blockers": [
+    "SDK-repository pull request 75 must complete protected review before the Orbit package set becomes final authority.",
+    "Document every rollout branch/PR, repository classification, canonical domain, identity/session rule, page/suite gate, evidence state, artifact identity, and rollback.",
+    "Keep this repository documentation-only; shared component and authentication source remains in SDK-repository and consumer applications."
+  ]
+}
