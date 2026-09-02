@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-02",
+  "status": "PREPARED_NOT_RENAMED",
+  "authority": {
+    "repository_id": 1350724356,
+    "current_repository": "appolon1908-hue/documentaions",
+    "target_repository_after_cutover": "appolon1908-hue/Codestra-Documentation"
+  },
+  "rules": {
+    "stable_identity_key": "repository_id",
+    "current_slug_remains_operational_until_cutover": true,
+    "target_slug_must_not_be_used_for_clone_or_automation_before_cutover": true,
+    "historical_evidence_is_immutable": true,
+    "dated_source_locks_are_not_rewritten": true,
+    "rename_is_not_deployment_authorization": true,
+    "rename_is_not_image_rebuild_authorization": true,
+    "rename_is_not_secret_rotation_authorization": true,
+    "one_repository_per_cutover": true,
+    "post_cutover_readback_required": true
+  },
+  "postgres_exporter_authority": {
+    "repository_id": 1350839865,
+    "repository": "appolon1908-hue/Codestra-Postgres-Exporter",
+    "public_hostname": null,
+    "private_service_identity": "postgres-exporter:9187",
+    "forbidden_public_hostname": "pgex.codestra.media",
+    "exposure": "PRIVATE_INTERNAL_ONLY",
+    "approved_consumer": "Prometheus on an approved private monitoring network"
+  },
+  "renames": [
+    {
+      "repository_id": 1221155447,
+      "current_slug": "Frontend-Resturant-",
+      "current_repository": "appolon1908-hue/Frontend-Resturant-",
+      "target_slug": "restaurant-frontend",
+      "target_repository_after_cutover": "appolon1908-hue/restaurant-frontend",
+      "status": "PREPARED_NOT_RENAMED",
+      "authority_role": "Restaurant customer and operations frontend",
+      "runtime_critical": true
+    },
+    {
+      "repository_id": 1343761049,
+      "current_slug": "transportaion-Frontend",
+      "current_repository": "appolon1908-hue/transportaion-Frontend",
+      "target_slug": "freight-platform-frontend",
+      "target_repository_after_cutover": "appolon1908-hue/freight-platform-frontend",
+      "status": "PREPARED_NOT_RENAMED",
+      "authority_role": "Freight brokerage and 3PL frontend",
+      "runtime_critical": true
+    },
+    {
+      "repository_id": 1343962199,
+      "current_slug": "LARIM-A-Fornt-end",
+      "current_repository": "appolon1908-hue/LARIM-A-Fornt-end",
+      "target_slug": "LARIM-A-Frontend",
+      "target_repository_after_cutover": "appolon1908-hue/LARIM-A-Frontend",
+      "status": "PREPARED_NOT_RENAMED",
+      "authority_role": "LARIMIA customer, professional, and operations frontend",
+      "runtime_critical": true
+    },
+    {
+      "repository_id": 1351353723,
+      "current_slug": "Codesrea-Social-",
+      "current_repository": "appolon1908-hue/Codesrea-Social-",
+      "target_slug": "Codestra-Social-Control-Plane",
+      "target_repository_after_cutover": "appolon1908-hue/Codestra-Social-Control-Plane",
+      "status": "PREPARED_NOT_RENAMED",
+      "authority_role": "Provider-neutral social control-plane architecture",
+      "runtime_critical": false
+    },
+    {
+      "repository_id": 1350724356,
+      "current_slug": "documentaions",
+      "current_repository": "appolon1908-hue/documentaions",
+      "target_slug": "Codestra-Documentation",
+      "target_repository_after_cutover": "appolon1908-hue/Codestra-Documentation",
+      "status": "PREPARED_NOT_RENAMED",
+      "authority_role": "Cross-repository architecture and operational documentation",
+      "runtime_critical": false
+    },
+    {
+      "repository_id": 1350724865,
+      "current_slug": "Infustruction-repo",
+      "current_repository": "appolon1908-hue/Infustruction-repo",
+      "target_slug": "Codestra-Infrastructure",
+      "target_repository_after_cutover": "appolon1908-hue/Codestra-Infrastructure",
+      "status": "PREPARED_NOT_RENAMED",
+      "authority_role": "Shared infrastructure, topology, GitOps, recovery, and release governance",
+      "runtime_critical": true
+    }
+  ],
+  "cutover_phases": [
+    "inventory",
+    "alias_compatibility",
+    "change_freeze",
+    "github_repository_rename",
+    "mutable_reference_update",
+    "actions_and_package_validation",
+    "server_remote_readback",
+    "rollback_rehearsal",
+    "compatibility_retirement"
+  ]
+}
