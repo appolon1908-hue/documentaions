@@ -17,7 +17,12 @@
     "rename_is_not_image_rebuild_authorization": true,
     "rename_is_not_secret_rotation_authorization": true,
     "one_repository_per_cutover": true,
-    "post_cutover_readback_required": true
+    "post_cutover_readback_required": true,
+    "all_inventoried_integrations_require_post_rename_readback": true,
+    "runtime_evidence_required_only_when_deployment_exists": true,
+    "absent_runtime_must_be_recorded_as_not_applicable": true,
+    "success_path_must_restore_freeze_state": true,
+    "rollback_path_must_restore_freeze_state": true
   },
   "postgres_exporter_authority": {
     "repository_id": 1350839865,
@@ -26,7 +31,10 @@
     "private_service_identity": "postgres-exporter:9187",
     "forbidden_public_hostname": "pgex.codestra.media",
     "exposure": "PRIVATE_INTERNAL_ONLY",
-    "approved_consumer": "Prometheus on an approved private monitoring network"
+    "approved_consumer": "Prometheus on an approved private monitoring network",
+    "caddy_publication_allowed": false,
+    "kong_publication_allowed": false,
+    "host_public_port_allowed": false
   },
   "renames": [
     {
@@ -95,10 +103,12 @@
     "alias_compatibility",
     "change_freeze",
     "github_repository_rename",
+    "post_rename_integration_readback",
     "mutable_reference_update",
     "actions_and_package_validation",
     "server_remote_readback",
     "rollback_rehearsal",
+    "operations_unfreeze",
     "compatibility_retirement"
   ]
 }
