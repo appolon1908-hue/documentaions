@@ -90,6 +90,11 @@ def validate() -> None:
         "dated_source_locks_are_not_rewritten",
         "one_repository_per_cutover",
         "post_cutover_readback_required",
+        "all_inventoried_integrations_require_post_rename_readback",
+        "runtime_evidence_required_only_when_deployment_exists",
+        "absent_runtime_must_be_recorded_as_not_applicable",
+        "success_path_must_restore_freeze_state",
+        "rollback_path_must_restore_freeze_state",
     }
     for key in required_true:
         if rules.get(key) is not True:
@@ -109,6 +114,7 @@ def validate() -> None:
         fail("migration authority must contain exactly six repositories")
 
     actual: dict[int, tuple[str, str, bool]] = {}
+    repository_ids: set[int] = set()
     current_names: set[str] = set()
     target_names: set[str] = set()
     for item in renames:
@@ -120,6 +126,8 @@ def validate() -> None:
         runtime_critical = item.get("runtime_critical")
         if not isinstance(repository_id, int) or repository_id <= 0:
             fail("rename entry contains an invalid repository ID")
+        if repository_id in repository_ids:
+            fail(f"duplicate repository ID: {repository_id}")
         if not isinstance(current, str) or not current.startswith("appolon1908-hue/"):
             fail(f"invalid current repository for ID {repository_id}")
         if not isinstance(target, str) or not target.startswith("appolon1908-hue/"):
@@ -133,6 +141,7 @@ def validate() -> None:
         if not isinstance(runtime_critical, bool):
             fail(f"runtime_critical must be boolean for ID {repository_id}")
         actual[repository_id] = (current, target, runtime_critical)
+        repository_ids.add(repository_id)
         current_names.add(current)
         target_names.add(target)
 
@@ -154,6 +163,13 @@ def validate() -> None:
         fail("retired PostgreSQL Exporter hostname is not explicitly forbidden")
     if exporter.get("exposure") != "PRIVATE_INTERNAL_ONLY":
         fail("PostgreSQL Exporter exposure must remain private/internal")
+    for field in (
+        "caddy_publication_allowed",
+        "kong_publication_allowed",
+        "host_public_port_allowed",
+    ):
+        if exporter.get(field) is not False:
+            fail(f"PostgreSQL Exporter {field} must remain false")
 
     phases = document.get("cutover_phases")
     required_phases = [
@@ -161,10 +177,12 @@ def validate() -> None:
         "alias_compatibility",
         "change_freeze",
         "github_repository_rename",
+        "post_rename_integration_readback",
         "mutable_reference_update",
         "actions_and_package_validation",
         "server_remote_readback",
         "rollback_rehearsal",
+        "operations_unfreeze",
         "compatibility_retirement",
     ]
     if phases != required_phases:
@@ -174,10 +192,16 @@ def validate() -> None:
     for required in (
         "PREPARED_NOT_RENAMED",
         "Historical-evidence rule",
-        "GitHub repository rename",
+        "post-rename integration readback",
         "server and runtime readback",
-        "rollback",
-        "compatibility retirement",
+        "rollback rehearsal",
+        "operations unfreeze",
+        "CURRENT_RUNTIME_STATE=DEPLOYED|NOT_DEPLOYED",
+        "DEPLOYED_IMAGE_DIGEST=<immutable-digest>|N/A",
+        "RUNTIME_DIGEST_UNCHANGED=PASS|FAIL|N/A",
+        "MERGES_UNFROZEN=PASS|FAIL",
+        "WORKFLOW_DISPATCH_UNFROZEN=PASS|FAIL|N/A",
+        "ROLLBACK_UNFREEZE=PASS|FAIL|N/A",
         "WORKLOADS_RESTARTED=0",
         "PRODUCTION_CHANGED=NO",
     ):
