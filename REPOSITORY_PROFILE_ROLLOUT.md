@@ -1,80 +1,70 @@
 # Codestra Repository Profile Rollout
 
-This matrix records the `REPOSITORY_PROFILE.md` rollout for all 54 repositories currently accessible under `appolon1908-hue`. It is a documentation/source-governance record and is not deployment authorization.
+Verified at `2026-09-06T16:49:16Z` across 58 accessible repositories: **12 profiles present on their default branch; 46 absent**. Presence confirms the file exists, not that its contents or runtime claims are certified. Draft links below are actual open profile drafts from the same queue snapshot. Historical unverified PR numbers have been removed.
 
-| # | Repository | Purpose class | Profile status |
-|---:|---|---|---|
-| 1 | `Frontend-Resturant-` | Restaurant frontend | [Draft PR #9](https://github.com/appolon1908-hue/Frontend-Resturant-/pull/9) |
-| 2 | `codestra-production-platform` | Production package/evidence reference | [Draft PR #155](https://github.com/appolon1908-hue/codestra-production-platform/pull/155) |
-| 3 | `Codestraxxxx` | Unclassified placeholder | Initial profile commit `b50002e01c19ed6b44743062698492e46a24e7c4` |
-| 4 | `codestra` | Codestra website/dashboard frontend | [Draft PR #20](https://github.com/appolon1908-hue/codestra/pull/20) |
-| 5 | `beyvra-backend` | Beyvra trading backend | [Draft PR #84](https://github.com/appolon1908-hue/beyvra-backend/pull/84) |
-| 6 | `codestra-backend` | Recovered Codestra backend | [Draft PR #32](https://github.com/appolon1908-hue/codestra-backend/pull/32) |
-| 7 | `backend2` | Codestra CMS/backend | [Draft PR #13](https://github.com/appolon1908-hue/backend2/pull/13) |
-| 8 | `beyvra-frontend` | Beyvra trading frontend | [Draft PR #85](https://github.com/appolon1908-hue/beyvra-frontend/pull/85) |
-| 9 | `scrapper` | Legacy crawler lineage | [Draft PR #17](https://github.com/appolon1908-hue/scrapper/pull/17) |
-| 10 | `Breero.com` | BREERO marketplace platform | [Draft PR #67](https://github.com/appolon1908-hue/Breero.com/pull/67) |
-| 11 | `booked4seasons` | Home-services public website | [Draft PR #39](https://github.com/appolon1908-hue/booked4seasons/pull/39) |
-| 12 | `kyqra` | Legacy Kyqra crawler | [Draft PR #2](https://github.com/appolon1908-hue/kyqra/pull/2) |
-| 13 | `telnexa` | SMS/Jasmin runtime | [Draft PR #32](https://github.com/appolon1908-hue/telnexa/pull/32) |
-| 14 | `kyqra-crawler` | Canonical crawler runtime | [Draft PR #36](https://github.com/appolon1908-hue/kyqra-crawler/pull/36) |
-| 15 | `klyrow.com` | Email/Postal/Mautic runtime | [Draft PR #65](https://github.com/appolon1908-hue/klyrow.com/pull/65) |
-| 16 | `codestra-provisioning-service` | Provisioning control/runtime service | [Draft PR #30](https://github.com/appolon1908-hue/codestra-provisioning-service/pull/30) |
-| 17 | `Moneybee-frontend-` | MoneyBee website and portals | [Draft PR #41](https://github.com/appolon1908-hue/Moneybee-frontend-/pull/41) |
-| 18 | `Moneybee-Backend` | MoneyBee backend/data authority | [Draft PR #38](https://github.com/appolon1908-hue/Moneybee-Backend/pull/38) |
-| 19 | `transportaion-Frontend` | Freight platform frontend | [Draft PR #21](https://github.com/appolon1908-hue/transportaion-Frontend/pull/21) |
-| 20 | `transportation-backend-` | Freight platform backend | [Draft PR #28](https://github.com/appolon1908-hue/transportation-backend-/pull/28) |
-| 21 | `LARIM-A-Fornt-end` | LARIMÍA customer/pro/ops frontends | [Draft PR #9](https://github.com/appolon1908-hue/LARIM-A-Fornt-end/pull/9) |
-| 22 | `LARIM-A-Backend` | LARIMÍA backend | [Draft PR #13](https://github.com/appolon1908-hue/LARIM-A-Backend/pull/13) |
-| 23 | `Telnexa-web` | Telnexa public website/onboarding | [Draft PR #83](https://github.com/appolon1908-hue/Telnexa-web/pull/83) |
-| 24 | `klyrow-Website-` | Klyrow public website | [Draft PR #31](https://github.com/appolon1908-hue/klyrow-Website-/pull/31) |
-| 25 | `Odoo` | CRM/ERP and business-state authority | [Draft PR #31](https://github.com/appolon1908-hue/Odoo/pull/31) |
-| 26 | `Keycloak` | Identity/OIDC authority | [Draft PR #50](https://github.com/appolon1908-hue/Keycloak/pull/50) |
-| 27 | `Middleware-` | Privileged integration/write authority | [Draft PR #63](https://github.com/appolon1908-hue/Middleware-/pull/63) |
-| 28 | `N8N` | Workflow/orchestration authority | [Draft PR #46](https://github.com/appolon1908-hue/N8N/pull/46) |
-| 29 | `Vicidialer-Codestra` | Voice/contact-center runtime | [Draft PR #20](https://github.com/appolon1908-hue/Vicidialer-Codestra/pull/20) |
-| 30 | `Kong` | API gateway authority | [Draft PR #28](https://github.com/appolon1908-hue/Kong/pull/28) |
-| 31 | `social.codestra.co` | Existing social publishing application | [Draft PR #33](https://github.com/appolon1908-hue/social.codestra.co/pull/33) |
-| 32 | `SDK-repository` | Shared contracts and SDK authority | [Draft PR #43](https://github.com/appolon1908-hue/SDK-repository/pull/43) |
-| 33 | `Caddy` | Public TLS/edge authority | [Draft PR #13](https://github.com/appolon1908-hue/Caddy/pull/13) |
-| 34 | `documentaions` | Cross-repository documentation authority | [Draft PR #4](https://github.com/appolon1908-hue/documentaions/pull/4) |
-| 35 | `Infustruction-repo` | Shared infrastructure/GitOps authority | [Draft PR #14](https://github.com/appolon1908-hue/Infustruction-repo/pull/14) |
-| 36 | `communication-platform-` | Communications architecture/coordination | [Draft PR #4](https://github.com/appolon1908-hue/communication-platform-/pull/4) |
-| 37 | `Codestra-Grafana-` | Grafana dashboards and datasources | [Draft PR #9](https://github.com/appolon1908-hue/Codestra-Grafana-/pull/9) |
-| 38 | `Codestra-Prometheus` | Metrics collection/storage/rules | [Draft PR #11](https://github.com/appolon1908-hue/Codestra-Prometheus/pull/11) |
-| 39 | `Codestra-Alertmanager` | Alert routing/inhibition | [Draft PR #7](https://github.com/appolon1908-hue/Codestra-Alertmanager/pull/7) |
-| 40 | `Codestra-Loki` | Log storage/query | [Draft PR #7](https://github.com/appolon1908-hue/Codestra-Loki/pull/7) |
-| 41 | `Codestra-Telemetry` | OpenTelemetry Collector pipelines | [Draft PR #7](https://github.com/appolon1908-hue/Codestra-Telemetry/pull/7) |
-| 42 | `Codestra-Tempo` | Trace storage/query | [Draft PR #7](https://github.com/appolon1908-hue/Codestra-Tempo/pull/7) |
-| 43 | `Superset` | Curated analytics dashboards | [Draft PR #6](https://github.com/appolon1908-hue/Superset/pull/6) |
-| 44 | `Codestra-Node-Exporter` | Host metrics/evidence exporter | [Draft PR #4](https://github.com/appolon1908-hue/Codestra-Node-Exporter/pull/4) |
-| 45 | `Codestra-cAdvisor` | Container metrics exporter | [Draft PR #4](https://github.com/appolon1908-hue/Codestra-cAdvisor/pull/4) |
-| 46 | `Codestra-Redis-Exporter` | Redis metrics exporter | [Draft PR #4](https://github.com/appolon1908-hue/Codestra-Redis-Exporter/pull/4) |
-| 47 | `Codestra-Blackbox-Exporter` | Synthetic probe exporter | [Draft PR #3](https://github.com/appolon1908-hue/Codestra-Blackbox-Exporter/pull/3) |
-| 48 | `Codestra-Alloy` | Telemetry collection agent | [Draft PR #4](https://github.com/appolon1908-hue/Codestra-Alloy/pull/4) |
-| 49 | `Codestra-OpenBao` | Secrets/policy/audit/DR authority | [Draft PR #5](https://github.com/appolon1908-hue/Codestra-OpenBao/pull/5) |
-| 50 | `Codestra-Postgres-Exporter` | PostgreSQL metrics exporter | [Draft PR #4](https://github.com/appolon1908-hue/Codestra-Postgres-Exporter/pull/4) |
-| 51 | `Codestra-Marketing-` | Planned marketing control plane | Initial profile commit `65c90249efe82e380dd5a8e78c135a6a7ca942b9` |
-| 52 | `Codestra-Communication-CC` | Planned communications control center | Initial profile commit `ac852122e57f2e098767353b0cd28484f8b8d0c1` |
-| 53 | `Codesrea-Social-` | Planned social control plane | Initial profile commit `e89bf8a696d70454aa12c4b5bf76c62f16ba7bf0` |
-| 54 | `Codestra-AI` | Planned governed AI control plane | Initial profile commit `65b5efe72e47611a925426b8d8efe066df3a6db6` |
+| Repository | Default-branch profile | Open profile draft |
+|---|---|---|
+| [backend2](https://github.com/appolon1908-hue/backend2) | Absent | [#6](https://github.com/appolon1908-hue/backend2/pull/6) |
+| [beyvra-backend](https://github.com/appolon1908-hue/beyvra-backend) | Absent | None observed |
+| [beyvra-frontend](https://github.com/appolon1908-hue/beyvra-frontend) | Absent | None observed |
+| [booked4seasons](https://github.com/appolon1908-hue/booked4seasons) | Absent | [#8](https://github.com/appolon1908-hue/booked4seasons/pull/8) |
+| [Breero.com](https://github.com/appolon1908-hue/Breero.com) | Absent | None observed |
+| [Caddy](https://github.com/appolon1908-hue/Caddy) | Absent | None observed |
+| [Codesrea-Social-](https://github.com/appolon1908-hue/Codesrea-Social-) | [Present](https://github.com/appolon1908-hue/Codesrea-Social-/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [codestra](https://github.com/appolon1908-hue/codestra) | Absent | [#20](https://github.com/appolon1908-hue/codestra/pull/20) |
+| [Codestra-AI](https://github.com/appolon1908-hue/Codestra-AI) | [Present](https://github.com/appolon1908-hue/Codestra-AI/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [Codestra-Alertmanager](https://github.com/appolon1908-hue/Codestra-Alertmanager) | Absent | None observed |
+| [Codestra-Alloy](https://github.com/appolon1908-hue/Codestra-Alloy) | Absent | [#6](https://github.com/appolon1908-hue/Codestra-Alloy/pull/6) |
+| [codestra-backend](https://github.com/appolon1908-hue/codestra-backend) | Absent | [#1](https://github.com/appolon1908-hue/codestra-backend/pull/1) |
+| [Codestra-Blackbox-Exporter](https://github.com/appolon1908-hue/Codestra-Blackbox-Exporter) | Absent | None observed |
+| [Codestra-cAdvisor](https://github.com/appolon1908-hue/Codestra-cAdvisor) | Absent | [#8](https://github.com/appolon1908-hue/Codestra-cAdvisor/pull/8) |
+| [Codestra-Communication-CC](https://github.com/appolon1908-hue/Codestra-Communication-CC) | [Present](https://github.com/appolon1908-hue/Codestra-Communication-CC/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [codestra-foundation](https://github.com/appolon1908-hue/codestra-foundation) | Absent | None observed |
+| [Codestra-Grafana-](https://github.com/appolon1908-hue/Codestra-Grafana-) | Absent | None observed |
+| [Codestra-Loki](https://github.com/appolon1908-hue/Codestra-Loki) | Absent | None observed |
+| [Codestra-Marketing-](https://github.com/appolon1908-hue/Codestra-Marketing-) | [Present](https://github.com/appolon1908-hue/Codestra-Marketing-/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [Codestra-Node-Exporter](https://github.com/appolon1908-hue/Codestra-Node-Exporter) | Absent | [#9](https://github.com/appolon1908-hue/Codestra-Node-Exporter/pull/9) |
+| [Codestra-OpenBao](https://github.com/appolon1908-hue/Codestra-OpenBao) | Absent | None observed |
+| [Codestra-Postgres-Exporter](https://github.com/appolon1908-hue/Codestra-Postgres-Exporter) | Absent | None observed |
+| [codestra-production-platform](https://github.com/appolon1908-hue/codestra-production-platform) | [Present](https://github.com/appolon1908-hue/codestra-production-platform/blob/release/production-activation/REPOSITORY_PROFILE.md) | None observed |
+| [codestra-production-runtime-authority](https://github.com/appolon1908-hue/codestra-production-runtime-authority) | Absent | None observed |
+| [Codestra-Prometheus](https://github.com/appolon1908-hue/Codestra-Prometheus) | Absent | None observed |
+| [codestra-provisioning-service](https://github.com/appolon1908-hue/codestra-provisioning-service) | Absent | [#16](https://github.com/appolon1908-hue/codestra-provisioning-service/pull/16) |
+| [Codestra-Redis-Exporter](https://github.com/appolon1908-hue/Codestra-Redis-Exporter) | Absent | None observed |
+| [Codestra-Telemetry](https://github.com/appolon1908-hue/Codestra-Telemetry) | Absent | None observed |
+| [Codestra-Tempo](https://github.com/appolon1908-hue/Codestra-Tempo) | Absent | None observed |
+| [Codestraxxxx](https://github.com/appolon1908-hue/Codestraxxxx) | [Present](https://github.com/appolon1908-hue/Codestraxxxx/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [communication-platform-](https://github.com/appolon1908-hue/communication-platform-) | Absent | [#4](https://github.com/appolon1908-hue/communication-platform-/pull/4) |
+| [Database-migrations-](https://github.com/appolon1908-hue/Database-migrations-) | Absent | None observed |
+| [documentaions](https://github.com/appolon1908-hue/documentaions) | Absent | [#4](https://github.com/appolon1908-hue/documentaions/pull/4) |
+| [Frontend-Resturant-](https://github.com/appolon1908-hue/Frontend-Resturant-) | Absent | [#9](https://github.com/appolon1908-hue/Frontend-Resturant-/pull/9) |
+| [Infustruction-repo](https://github.com/appolon1908-hue/Infustruction-repo) | Absent | [#13](https://github.com/appolon1908-hue/Infustruction-repo/pull/13) |
+| [Keycloak](https://github.com/appolon1908-hue/Keycloak) | Absent | None observed |
+| [klyrow-Website-](https://github.com/appolon1908-hue/klyrow-Website-) | [Present](https://github.com/appolon1908-hue/klyrow-Website-/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [klyrow.com](https://github.com/appolon1908-hue/klyrow.com) | [Present](https://github.com/appolon1908-hue/klyrow.com/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [Kong](https://github.com/appolon1908-hue/Kong) | [Present](https://github.com/appolon1908-hue/Kong/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [kyqra](https://github.com/appolon1908-hue/kyqra) | Absent | [#5](https://github.com/appolon1908-hue/kyqra/pull/5) |
+| [kyqra-crawler](https://github.com/appolon1908-hue/kyqra-crawler) | Absent | [#32](https://github.com/appolon1908-hue/kyqra-crawler/pull/32) |
+| [LARIM-A-Backend](https://github.com/appolon1908-hue/LARIM-A-Backend) | Absent | [#4](https://github.com/appolon1908-hue/LARIM-A-Backend/pull/4) |
+| [LARIM-A-Fornt-end](https://github.com/appolon1908-hue/LARIM-A-Fornt-end) | Absent | [#4](https://github.com/appolon1908-hue/LARIM-A-Fornt-end/pull/4) |
+| [Middleware-](https://github.com/appolon1908-hue/Middleware-) | Absent | None observed |
+| [Moneybee-Backend](https://github.com/appolon1908-hue/Moneybee-Backend) | Absent | None observed |
+| [Moneybee-frontend-](https://github.com/appolon1908-hue/Moneybee-frontend-) | Absent | None observed |
+| [N8N](https://github.com/appolon1908-hue/N8N) | [Present](https://github.com/appolon1908-hue/N8N/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [Odoo](https://github.com/appolon1908-hue/Odoo) | Absent | None observed |
+| [scrapper](https://github.com/appolon1908-hue/scrapper) | Absent | [#25](https://github.com/appolon1908-hue/scrapper/pull/25) |
+| [SDK-repository](https://github.com/appolon1908-hue/SDK-repository) | [Present](https://github.com/appolon1908-hue/SDK-repository/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [social.codestra.co](https://github.com/appolon1908-hue/social.codestra.co) | Absent | [#27](https://github.com/appolon1908-hue/social.codestra.co/pull/27) |
+| [Superset](https://github.com/appolon1908-hue/Superset) | [Present](https://github.com/appolon1908-hue/Superset/blob/main/REPOSITORY_PROFILE.md) | None observed |
+| [telnexa](https://github.com/appolon1908-hue/telnexa) | Absent | [#21](https://github.com/appolon1908-hue/telnexa/pull/21) |
+| [Telnexa-web](https://github.com/appolon1908-hue/Telnexa-web) | Absent | [#9](https://github.com/appolon1908-hue/Telnexa-web/pull/9) |
+| [transportaion-Frontend](https://github.com/appolon1908-hue/transportaion-Frontend) | Absent | [#4](https://github.com/appolon1908-hue/transportaion-Frontend/pull/4) |
+| [transportation-backend-](https://github.com/appolon1908-hue/transportation-backend-) | Absent | [#10](https://github.com/appolon1908-hue/transportation-backend-/pull/10) |
+| [Vicidialer-Codestra](https://github.com/appolon1908-hue/Vicidialer-Codestra) | Absent | [#8](https://github.com/appolon1908-hue/Vicidialer-Codestra/pull/8) |
+| [Websocket-](https://github.com/appolon1908-hue/Websocket-) | Absent | None observed |
 
-## Profile standard
+## Continuation rule
 
-Each profile identifies:
+Review each absent profile in its owning repository, reconcile it with the current README and source, preserve current CI and authority boundaries, and validate the exact head before marking the draft ready. A missing profile alone does not authorize copying application code or changing runtime configuration.
 
-- repository category, authority, visibility, default branch, and status;
-- purpose and owned capabilities;
-- explicit non-owned capabilities and duplication boundaries;
-- key integrations;
-- current implementation/governance priorities;
-- branch, security, secret, deployment, and external-effect safety rules.
-
-## Permanent rules
-
-- Principal repositories own their runtime source.
-- `SDK-repository` remains the single shared SDK and contract authority.
-- Middleware remains the only privileged cross-system write authority.
-- Documentation and infrastructure repositories may coordinate or deploy accepted component artifacts, but must not duplicate application/runtime source.
-- Legacy and placeholder repositories must remain explicitly labeled.
-- A profile or documentation merge does not deploy software or enable any live effect.
+See [the full queue](REPOSITORY_CONTINUATION_2026-09-06.md) and [machine-readable snapshot](repository-continuation-2026-09-06.json).
