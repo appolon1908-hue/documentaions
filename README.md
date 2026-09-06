@@ -21,3 +21,8 @@ See:
 Production and runtime changes remain owned by their respective principal service repositories. Documentation in this repository must reference those authorities and must never be treated as deployment, secret rotation, provider activation, financial action, or production-write authorization.
 
 Dated evidence retains the repository names valid when it was captured. Do not rewrite historical source locks, pull-request evidence, release manifests, checksums, or certification reports merely to reflect a later repository rename.
+## Repository work queue
+
+- [Repository catalog](REPOSITORY_CATALOG.md) — verified names, visibility, default branches and authority classifications.
+- [Profile rollout](REPOSITORY_PROFILE_ROLLOUT.md) — default-branch presence and actual open profile drafts.
+- [Continuation queue](REPOSITORY_CONTINUATION_2026-09-06.md) — dated inventory of all observed open issues and drafts.
